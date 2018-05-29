@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal JavaScript</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        h2{
+            background-color: lightgreen;
+            text-align: center;
+            padding: 10px;
+        }
+        #text-div{
+            background-color: seagreen;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            margin-bottom: 10px;
+        }
+        #image-div{
+            background-color: seagreen;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            margin-bottom: 10px;
+        }
+        #green-p{
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Internal JavaScript Example</h2>
+<div>
+    <h1 id="display"></h1>
+</div>
+
+<!-- Change the below Text using Internal JavaScript -->
+
+<div id="text-div">
+    <p id="green-p">Change my Color using the below Buttons</p>
+    <button onclick="blue()">Change to Blue</button>
+    <button onclick="red()">Change to Red</button>
+</div>
+
+<!-- Change the below Image using Internal JavaScript -->
+
+<div id="image-div">
+    <img src="../img/google.jpg" width="300" height="200" id="myImage">
+    <br>
+    <button onclick="facebook()">Facebook</button>
+    <button onclick="youtube()">Youtube</button>
+</div>
+
+
+<!-- Add your Java Script code here for Internal Way-->
+<script>
+    function blue() {
+        document.getElementById('green-p').style.color='blue';
+    }
+    function red() {
+        document.getElementById('green-p').style.color = 'red';
+    }
+    function facebook() {
+        document.getElementById('myImage').setAttribute('src','../img/facebook.jpg');
+    }
+    function youtube() {
+        document.getElementById('myImage').setAttribute('src','../img/youtube.jpg');
+    }
+</script>
+
+</body>
+</html>
