@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Basics</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        h2{
+            background-color: lightgreen;
+            text-align: center;
+            padding: 10px;
+        }
+        div{
+            background-color: seagreen;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>JavaScript Basics</h2>
+    <div>
+        <h1 id="display"></h1>
+    </div>
+
+</body>
+
+
+<script>
+
+    //Alert Box
+    //alert("Hello Js");
+
+    // confirm Box
+    //confirm('Welcome to JS');
+
+    //console log
+    console.log('Hello JavaScript');
+
+    //Display date on the console
+    var today = new Date();
+    console.log(today);
+
+    // Display date on the web page using DOM
+    document.getElementById('display').innerHTML=today+"";
+
+
+</script>
+
+</html>
