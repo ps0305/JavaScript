@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variable Declaration</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        h2{
+            background-color: lightgreen;
+            text-align: center;
+            padding: 10px;
+        }
+        div{
+            background-color: seagreen;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h2>Variable Declaration Example</h2>
+    <div>
+        <h1 id="display"></h1>
+    </div>
+</body>
+
+<script>
+
+    // Create two variables and display their sum
+    var a = 10;
+    var b = 20;
+    var sum = a+b;
+    var output = "The Sum of a, b is:"+sum;
+    console.log(output);
+    document.getElementById('display').innerHTML = output;
+
+
+    // Find the biggest value between 2 numbers
+    var x = 10;
+    var y = 20;
+    var result = "";
+    if (x>y){
+        output= 'the big value is :'+x;
+    }else{
+        output= 'the big value is :' +y;
+    }
+    document.getElementById('display').innerHTML = output;
+
+
+    // Find the biggest value among 3 numbers
+    var p = 10;
+    var q = 20;
+    var r = 30;
+    output = "";
+
+    if(p>q && p>r){
+        output = "The biggest value is : "+ p;
+    }else if(q>r){
+        output = "The biggest value is :"+q;
+    }else{
+        output = "The biggest value is :" +r;
+    }
+    console.log(output);
+    document.getElementById('display').innerHTML = output;
+
+</script>
+</html>
