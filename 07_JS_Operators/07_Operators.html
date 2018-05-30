@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Operators</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        h2{
+            background-color: lightgreen;
+            text-align: center;
+            padding: 10px;
+        }
+        div{
+            background-color: seagreen;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>JS Operators Example</h2>
+    <div>
+        <h1 id="display"></h1>
+    </div>
+
+</body>
+<script>
+
+    // Assignment operator =
+    var a = 10;
+    output = "The value of a is :"+a;
+    console.log(output);
+    document.getElementById('display').innerHTML = output;
+
+
+    // Arithmetic operators + - * /
+    var b = 20;
+    var c = 30;
+    var sum = a+b;
+    output = "The sum of a , b is :" +sum;
+    console.log(output);
+
+
+    // Short hand math += , -= , *= , /=
+    var p = 10;
+    var q = 20;
+    var add = 0;
+    add += (p+q);
+    console.log(add);
+
+    // Conditional operators < , > , <= , >= , !=
+    var age = 20;
+    if(age>18){
+        console.log("You are a teenage");
+    }else{
+        console.log("You are minor");
+    }
+
+    // Unary Operator ++ , -- (pre , post)
+    var num1 = 10;
+    num1 ++;
+    console.log(num1);
+
+    // Logical operators AND , OR
+    var inRealtion = true;
+    var isParentAgreed = false;
+    output = "";
+    if (inRealtion && isParentAgreed){
+        output = "Get marry soon";
+    }else{
+        output = "Pls wait untill they agree";
+    }
+    console.log(output);
+
+
+    // String Concatenation Operator
+    var def = "1" + "2" + 3 + 4;
+    console.log(def);
+
+
+    // Ternary operator (? :)
+
+
+    // Type of operator
+
+
+     // == operator
+
+
+    // === operator
+
+</script>
+</html>
