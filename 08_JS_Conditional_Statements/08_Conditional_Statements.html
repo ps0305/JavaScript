@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Conditional Statements</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        h2{
+            background-color: lightgreen;
+            text-align: center;
+            padding: 10px;
+        }
+        div{
+            background-color: seagreen;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>JS Conditional Statements Example</h2>
+    <div>
+        <h1 id="display"></h1>
+    </div>
+
+</body>
+
+<script>
+
+    // If Else condition Example
+    var courseCompleted = true;
+    var practiceCompleted = false;
+    output = "";
+    if(courseCompleted && practiceCompleted){
+        output = "You will get a job soon... !!";
+    }else if (courseCompleted && !practiceCompleted){
+        output = "Keep Practicing";
+    }else{
+        output = "Pray to God... !!";
+    }
+    console.log(output);
+    document.getElementById('display').innerHTML = output;
+
+    // For loop Example to display from 1 - 10 values
+    output = "";
+    for (var i=1; i <11; i++){
+       if(i<=9){
+           output += i + ",";
+       }else{
+           output += i ;
+       }
+    }
+    console.log(output);
+    document.getElementById('display').innerHTML = output;
+
+    // While loop Example to display from 1 - 10 values
+    var i = 1;
+    output = "";
+    while(i <= 10){
+        if(i <= 9){
+            output += i + " - ";
+            i++;
+        }
+        else{
+            output += i;
+            i++;
+        }
+    }
+    console.log(output);
+    document.getElementById('display').innerHTML = output;
+
+    // Do while loop Example to display from 1 - 10 values
+    var i = 1;
+    output = "";
+    do{
+       output += i + " * ";
+       i++;
+    }while(i <= 10);
+    console.log(output);
+    document.getElementById('display').innerHTML = output;
+
+    // Switch Statement Example to display full Day
+    var today = new Date().getDay();
+    output = "Today is :";
+    switch(today){
+        case 0:
+        output += "Sunday";
+        break;
+        case 1:
+                output += "Monday";
+                break;
+        case 2:
+                output += "Tueday";
+                break;
+        case 3:
+                output += "Wednesday";
+                break;
+        case 4:
+                output += "Thursday";
+                break;
+        case 5:
+                output += "Friday";
+                break;
+        case 6:
+                output += "Saturday";
+                break;
+
+    }
+    console.log(output);
+    document.getElementById('display').innerHTML = output;
+
+
+</script>
+</html>
