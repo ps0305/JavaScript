@@ -84,15 +84,45 @@
 
 
     // Ternary operator (? :)
-
+    var myAge = 25;
+    output = "";
+    (myAge >= 18) ? output = "You are Major" : output= "You are Minor";
+    console.log(output);
+    document.getElementById('display').innerHTML = output;
 
     // Type of operator
+    var xyz;
+    xyz = null;
+    output = "The type of xyz is :" +typeof xyz;
+    console.log(output);
+    document.getElementById('display').innerHTML = output;
 
 
-     // == operator
+
+    // == operator
+    a = 10;
+    b = "10";
+    output = "";
+    if (a == b){
+        output = "both are equals"
+    }else{
+        output = "both are not equal"
+    }
+    console.log(output);
+    document.getElementById('display').innerHTML = output;
 
 
     // === operator
+    a = 10;
+    b = "10";
+    output = "";
+    if (a === b){
+        output = "both are equals"
+    }else{
+        output = "both are not equal"
+    }
+    console.log(output);
+    document.getElementById('display').innerHTML = output;
 
 </script>
 </html>
