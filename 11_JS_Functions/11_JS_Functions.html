@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Functions</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        h2{
+            background-color: lightgreen;
+            text-align: center;
+            padding: 10px;
+        }
+        div{
+            background-color: seagreen;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>JS Functions Example</h2>
+    <div>
+        <h1 id="display"></h1>
+    </div>
+
+</body>
+
+<script>
+
+    //creation of a simple function with no args and execute a function
+    function greet() {
+        var output = "Hello World";
+        console.log(output);
+        document.getElementById('display').innerHTML = output;
+    }
+    greet();
+
+    //creation of a simple function with args
+    function hello(name) {
+        var output = "Hello" + name;
+        console.log(output);
+    }
+    hello(" John");
+
+    // executing a function with less number of params
+    function lessParams(name,age) {
+        var output = "Hi " + name + " You are " + age + " Years Old..!";
+        console.log(output);
+    }
+    lessParams();//if you don't pass any params ,it will return with undefined.
+
+    //executing a function with more number of params
+    function moreParams(name,age) {
+        var output = "Hi " + name + " You are " + age + " Years Old..!";
+        console.log(output);
+    }
+    moreParams('Mike',34,40000,'Manager');
+
+    //Statement => function overloading is not possible here
+
+    // functions with return values
+    function valueReturn(name,age) {
+        var output = "Good Morning "+ name;
+        return output;
+    }
+    var greeting = valueReturn('Colt');
+    console.log(greeting);
+    //function with empty return /no return
+    function emptyReturn(name,age) {
+        var output = "Good Morning "+ name;
+        return;
+    }
+    var greeting1 = emptyReturn('Colt');
+    console.log(greeting);
+
+    // function Expressions with name and execution
+
+
+    // Anonymous Function Expression and execution
+
+
+    // Functions as arguments without args
+
+
+
+    // Functions as arguments with args args
+
+
+    // Functions in Objects and Execution
+
+
+    // this keyword for accessing objects props in function
+
+
+    // Coding Exercise 1
+    /*
+    Create an employee obj and address object in it. add a property called
+    isFromState() to return true if a person from that state.
+     */
+
+
+    // Default Function Arguments (arguments)
+
+
+</script>
+</html>
