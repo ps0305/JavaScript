@@ -79,20 +79,71 @@
     console.log(greeting);
 
     // function Expressions with name and execution
-
+    var greetFn = function greet(){
+        var output = "this is from function expression";
+        console.log(output);
+    }
+    greetFn();
 
     // Anonymous Function Expression and execution
-
+    var greetAnonymous = function () {
+        var output = "This is from the anonymous function";
+        console.log(output);
+    }
+    greetAnonymous();
 
     // Functions as arguments without args
+    function greet1(){
+        var output = "This is from greet1 function";
+        console.log(output);
+    }
 
+    function greet2(){
+        var output = "This is from greet2 function";
+        console.log(output);
+    }
+    function greetEngine(fName){
+        fName();
+    }
+    greetEngine(greet1);
+
+    //with args
+    function greet1(name){
+        var output = "This is from greet1 function";
+        console.log(output);
+    }
+
+    function greet2(name){
+        var output = "This is from greet2 function";
+        console.log(output);
+    }
+    function greetEngine(fName,name){
+        fName(name);
+    }
+    greetEngine(greet1,'John');
 
 
     // Functions as arguments with args args
+    var greetArgs1 = function (name) {
+        var output = "Hello "+ name + " I'm from GreetArgs1";
+        console.log(output);
+    };
+    var greetArgsEngine =function (fName,name) {
+        fName(name);
+    }
+    greetArgsEngine(greetArgs1,'Colt')
 
 
     // Functions in Objects and Execution
-
+    var student = {
+        fName :'Colt',
+        lName : 'Steele',
+        getFullName : function () {
+            return this.fName + " " + this.lName;
+        }
+    }
+    var student_name = student.getFullName();
+    console.log(student_name);
 
     // this keyword for accessing objects props in function
 
@@ -102,9 +153,32 @@
     Create an employee obj and address object in it. add a property called
     isFromState() to return true if a person from that state.
      */
-
+    var employee = {
+        fName : 'Mike',
+        lName : 'Smith',
+        address : {
+            city : 'Hyderabad',
+            state : 'Telengala',
+            country : 'India'
+        },
+        isFromCity : function (city) {
+            return this.address.city === city;
+        }
+    };
+    var emp_city = employee.isFromCity('Hyderabad');
+    var output = "isFromCity Hyderabad ? :" + emp_city;
+    console.log(output);
 
     // Default Function Arguments (arguments)
+
+    function defaultArgs() {
+        var output = "";
+        for ( var i = 0 ; i < arguments.length ; i++){
+            output += arguments[i] + " ";
+            console.log(output);
+        }
+    }
+    defaultArgs('Mike' ,40 , 'Developer');
 
 
 </script>
