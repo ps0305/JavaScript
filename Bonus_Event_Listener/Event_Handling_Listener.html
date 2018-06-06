@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event_handling</title>
+    <style>
+        .event-div{
+            font-family: "Comic Sans MS";
+            background-color: orange;
+            padding: 10px;
+            width: 400px;
+            font-size: 18px;
+        }
+        input[type='text']{
+            border: 2px solid grey;
+        }
+        /*----------Listeners------------*/
+
+        .listener-div{
+            font-family: "Comic Sans MS", sans-serif;
+            margin: 5px;
+            padding: 10px;
+            background-color: #1de9b6;
+            width: 400px;
+            color: white;
+        }
+        .listener-div h2{
+            background-color: purple;
+            text-align: center;
+        }
+    </style>
+
+
+
+    </head>
+    <body>
+        <!---------Event handling--------------->
+        <div class="event-div">
+            <form>
+                <label>User Name</label>
+                <input type="text" id="username">
+                <input type="button" value="submit" onclick="validate()">
+            </form>
+
+        </div>
+
+        <!-----Event Listeners---------->
+        <div class="listener-div">
+            <form>
+                <label>Enter text Area</label>
+                <input type="text" id="uname">
+            </form>
+            <h1 id="display"></h1>
+        </div>
+
+    <script>
+        function validate() {
+            var usernameValue = document.querySelector('#username').value;
+            //alert(usernameField);
+            var inputBox = document.querySelector('#username');
+            if(username === 'Deron'){
+                inputBox.style.borderColor = 'green';
+            }else{
+                inputBox.style.borderColor = 'red';
+            }
+        }
+
+        //Listeners
+
+        //get the element
+        var u_name = document.querySelector('#uname');
+
+        //hook up event listener
+        u_name.addEventListener('keyup' ,spellCheck);
+        //logic
+        function spellCheck() {
+            //console.log('test');
+            var userText = u_name.value;
+            document.getElementById('display').innerHTML = userText;
+        }
+    </script>
+    </body>
+    </html>
