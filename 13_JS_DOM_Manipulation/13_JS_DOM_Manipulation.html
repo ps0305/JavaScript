@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS DOM Manipulation</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        h2{
+            background-color: lightgreen;
+            text-align: center;
+            padding: 10px;
+        }
+        div{
+            background-color: seagreen;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>JS DOM Manipulation</h2>
+    <div>
+        <h1 id="display"></h1>
+    </div>
+
+</body>
+<script>
+
+    //BOM Operations
+
+    // width of the browser
+    var width = window.innerWidth;
+    var output = "Width of the browser is :" + width + "px";
+    console.log(output);
+    // heigth of the browser
+    var height = window.innerHeight;
+    var output = "Width of the browser is :" + height  + "px";
+    console.log(output);
+    // Open a new Tab
+   //window.open();
+    // DOM Properties to get body , title , URL
+    var title = document.title;
+    var output = "The title of the document is :" + title;
+    console.log(output);
+
+    var url = document.URL;
+    var output = "The url of the document is :" + url;
+    console.log(output);
+    //DOM Methods
+    //document.getElementById();
+    //document.getElementsByClassName();
+    //document.getElementsByTagName();
+    //document.querySelector();
+    //document.querySelectorAll();
+
+    // Access and Change the Elements
+
+    // DOM Events
+
+</script>
+</html>
