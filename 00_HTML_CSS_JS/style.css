@@ -1,0 +1,92 @@
+
+
+
+
+    
+ 
+    <style>
+
+
+
+    	body{
+
+    		background-color: #843E03;
+            margin: 0;
+            font-family: "Franklin Gothic Book",sans-serif;
+    	}
+
+        header , footer{
+           /*background-color: #843E03;*/
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        /* main navigation */
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+           /* background-color: #843E03; */
+            overflow: hidden;
+        }
+        nav ul li{
+            float: left;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 14px 25px;
+            display: inline-block;
+        }
+        nav ul li a:hover{
+            background-color: #B05304;
+        }
+        nav ul li a.active{
+            background-color: #582A02;
+        }
+
+        /* Sidebar Section */
+        aside{
+            float: left;
+            min-width: 200px;
+        }
+        aside ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        aside ul li a{
+            text-decoration: none;
+            color:  #421F02;
+            padding: 14px 18px;
+            display: block;
+        }
+        aside ul li a:hover{
+            background-color: #B05304;
+            color: white;
+        }
+
+        /* main Section */
+        section{
+            margin-left: 200px;
+            border-left: 2px solid #421F02;
+            padding: 10px;
+        }
+        details{
+            
+            padding: 14px;
+            margin: 5px;
+            color: white;
+        }
+        article{
+            
+            color: black;
+            padding: 10px;
+        }
+        article h2{
+            color: #421F02;
+        }
+
+    </style>
