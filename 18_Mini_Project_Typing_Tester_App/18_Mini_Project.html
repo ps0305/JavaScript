@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
     <title>Mini Project</title>
     <script src="script.js" async></script>
@@ -9,30 +17,29 @@
 <body>
 <!-- MAIN HEADER -->
 <header class="main-header">
-    <h1>UI Brains Typing Tester App</h1>
+    <h1 class="col s12 m3 card-panel amber z-depth-4 center-align">Typing Tester App</h1>
 </header>
 
 <section class="intro-section">
-    <div>
-        <p>This is a typing test.
-            Your goal is to duplicate the provided text,
-            EXACTLY, in the field below.
+    <div class="col s12 m3 white-text card-panel indigo z-depth-4">
+        <p>Please duplicate the provided text,
+            'EXACTLY', in the text-field below.
             The timer starts when you start typing,
-            and only stops when you match this
-            text exactly. Good Luck!</p>
+            and only stops when you match with this
+            text exactly.</p>
     </div>
 </section>
 <br>
 <section class="text-section">
-    <div class="text-section-div">
-        <p>Thanks for Learning UI Technologies.</p>
+    <div class="text-section-div col s12 m3 white-text card-panel cyan z-depth-4">
+        <p>Thanks for Testing The App !</p>
     </div>
 </section>
 
 <br>
 <section class="text-area-section">
     <div class="text-area-div">
-        <textarea id="text-area" rows="6" cols="56" placeholder="The Clock starts when you starts typing.."></textarea>
+        <textarea id="text-area" rows="6" cols="56" placeholder="The Clock starts when you start typing.."></textarea>
     </div>
 </section>
 
@@ -41,7 +48,7 @@
     <div class="result-section-div">
         <span class="timer">00:00:00</span>
         <span>
-                <button type="button" id="reset">Reset</button>
+                <button class="btn white purple-text waves-effect waves-purple" type="button" id="reset">Reset</button>
             </span>
     </div>
 </section>
@@ -54,9 +61,9 @@
 </section>
 
 <footer>
-    <h3>Copyright &copy; 2018 UIBrains.com</h3>
+    <h3>Copyright &copy; 2018</h3>
     <p>All Rights Reserved</p>
-    <small>Developed & Maintained by Naveen Saggam</small>
+    <small>Developed by Pankaj Singh</small>
 </footer>
 </body>
 </html>

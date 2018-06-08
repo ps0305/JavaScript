@@ -2,21 +2,18 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
-
 .main-header{
-    background-color:#0E0C0A;
-    color: white;
-    text-align: center;
-    padding: 40px;
-    font-size: 25px;
+    max-width: 750px;
+    margin: 0 auto; /* place center */
+    font-size: 16px;
 }
 
+
 .intro-section{
-    background-color: #5B5349;
     padding: 20px;
     color: white;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .intro-section div{
@@ -26,9 +23,8 @@ body{
 
 .text-section{
     margin: 0 auto; /* place center */
-    max-width: 750px;
-    background-color: #E1DFDD;
-    padding: 10px;
+    max-width: 550px;
+    padding: 5px;
     text-align: center;
     font-size: 25px;
     border-radius: 5px;
@@ -65,16 +61,9 @@ body{
 }
 
 .result-section-div button{
-    background-color: orangered;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: none;
-    text-align: center;
+    
     display: inline-block;
-    font-size: 30px;
-    cursor: pointer;
-    border-radius: 4px;
+    
     float: right;
 }
 
@@ -108,7 +97,7 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: 12px;
     margin-top: 20px;
 }
 
