@@ -1,46 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>JS Closures</title>
-    <style>
-        h2 {
-            background-color: lightgreen;
-            text-align: center;
-            padding: 5px;
-        }
-
-        div {
-            padding: 10px;
-            text-align: center;
-            color: white;
-            margin: 10px;
-        }
-
-        .green {
-            background-color: seagreen;
-        }
-
-        .blue {
-            background-color: darkslateblue;
-        }
-    </style>
-</head>
-
-<body>
-
-    <h2>JS Closures Example</h2>
-
-    <div class="green">
-        <h1 id="display1"></h1>
-    </div>
-
-    <div class="blue">
-        <h1 id="display2"></h1>
-    </div>
-
-</body>
 <script>
     // Closures Example 1 (calling inner() inside outer)
 
@@ -100,8 +58,8 @@
 
         // The Module Pattern Intro in JS
         var employee = {
-            firstName : "Naveen",
-            lastName : "Saggam",
+            firstName : "john",
+            lastName : "doe",
             getFirstName :function () {
                 return this.firstName;
             },
@@ -118,8 +76,8 @@
             employee.getFirstName();
 
         function Employee() {
-            var firstName = "Naveen";
-            var lastName = "Saggam";
+            var firstName = "john";
+            var lastName = "doe";
 
             var employee = {
                 getFirstName : function() {
